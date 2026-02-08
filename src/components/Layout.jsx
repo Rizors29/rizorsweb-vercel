@@ -8,11 +8,11 @@ function Layout() {
 
       <div
         className="
-          fixed inset-0 -z-10
+          absolute inset-0 -z-10
           bg-[url(/img/background.png)]
           bg-cover
           bg-[position:15%_center]
-          md:bg-center
+          md:fixed md:bg-center
         "
       />
 

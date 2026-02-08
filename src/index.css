@@ -1,13 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --animate-slide-up:slide-up 1.2s ease-in-out;
+  --animate-slide-up: slide-up 1.2s ease-in-out;
 
   @keyframes slide-up {
     0% {
       opacity: 0;
       transform: translateY(60px);
     }
+
     100% {
       opacity: 1;
       transform: translateY(0);
@@ -16,17 +17,10 @@
 }
 
 @layer base {
-  html,
   body {
-    height: 100%;
-    overscroll-behavior: none;
-  }
-
-  body {
-    overscroll-behavior-y: none;
-  }
-
-  #root {
-    min-height: 100svh;
+    background-image: url("/img/background.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
   }
 }
