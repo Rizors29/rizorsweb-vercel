@@ -11,13 +11,12 @@ function Layout() {
           fixed inset-0 -z-10
           bg-[url(/img/background.png)]
           bg-cover
-          bg-center
-          will-change-transform
-          transform translate-z-0
+          bg-[position:15%_center]
+          md:bg-center
         "
       />
 
-      <main className="w-full min-h-[100svh] overflow-x-hidden">
+      <main className="w-full min-h-[100svh] overflow-hidden">
         <Outlet />
       </main>
     </>
