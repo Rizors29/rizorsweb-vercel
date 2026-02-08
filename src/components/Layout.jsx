@@ -16,7 +16,7 @@ function Layout() {
         "
       />
 
-      <main className="min-h-screen w-full">
+      <main className="w-full min-h-[100svh] overflow-hidden">
         <Outlet />
       </main>
     </>

@@ -6,7 +6,7 @@ import Views from "../components/Views";
 class Home extends React.Component {
   render() {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center min-h-[100svh]">
         <Hello />
         <Button />
         <Views id="home" />
