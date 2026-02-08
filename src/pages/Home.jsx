@@ -1,14 +1,14 @@
-import React from "react";
-import Hero from "../sections/Hero";
-import Navbar from "../components/Navbar";
+import React from "react"
+import Button from "../components/Button"
+import Hello from "../components/Hello"
 
 class Home extends React.Component {
   render() {
     return (
-      <>
-        <Navbar />
-        <Hero />
-      </>
+      <div className="min-h-screen flex flex-col items-center justify-center">
+        <Hello />
+        <Button />
+      </div>
     );
   }
 }

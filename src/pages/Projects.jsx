@@ -1,5 +1,12 @@
-function Projects() {
-  return <h1 className="mt-20 justify-center flex">STAY TUNE!</h1>;
+import React from "react";
+import Cards from "../components/Cards";
+
+class Projects extends React.Component {
+  render() {
+    return (
+      <Cards />
+    );
+  }
 }
 
 export default Projects;

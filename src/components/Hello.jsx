@@ -23,8 +23,8 @@ function Hello() {
   }, []);
 
   return (
-    <h1 className="text-white font-bold text-4xl text-center ms-0 md:ms-[30rem]">
-      I&apos;m a <span className="text-blue-300">{text}</span>
+    <h1 className="text-white font-bold text-4xl text-center ms-0 md:ms-[30rem] text-shadow-lg animate-slide-up">
+      I'm a <span className="text-blue-300">{text}</span>
     </h1>
   )
 }
