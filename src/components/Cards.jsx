@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Card from "./Card";
 
 const projects = [
@@ -49,8 +50,12 @@ const projects = [
 ];
 
 function Cards() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <section className="px-6 py-24 text-white bg-black/40">
+    <section className="px-6 py-24 text-white bg-black/40 backdrop-blur-sm">
       <h2 className="text-3xl font-bold text-center mb-12 animate-slide-up">
         My Projects
       </h2>
