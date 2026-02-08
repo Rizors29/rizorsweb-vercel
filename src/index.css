@@ -19,7 +19,6 @@
   html,
   body {
     height: 100%;
-    background-color: #000;
     overscroll-behavior: none;
   }
 
@@ -29,6 +28,5 @@
 
   #root {
     min-height: 100svh;
-    background-color: #000;
   }
 }
