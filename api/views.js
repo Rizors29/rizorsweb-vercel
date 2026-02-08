@@ -1,6 +1,6 @@
 import { kv } from "@vercel/kv";
 
-async function handler(req, res) {
+export default async function handler(req, res) {
   const { id } = req.query;
 
   if (!id) {
@@ -8,11 +8,19 @@ async function handler(req, res) {
   }
 
   try {
-    const views = await kv.incr(`rizorsweb:project:${id}`);
-    res.status(200).json({ views });
-  } catch {
-    res.status(500).json({ error: "Failed to update views" });
+    if (req.method === "POST") {
+      const views = await kv.incr(`rizorsweb:project:${id}`);
+      return res.status(200).json({ views });
+    }
+
+    if (req.method === "GET") {
+      const views = (await kv.get(`rizorsweb:project:${id}`)) ?? 0;
+      return res.status(200).json({ views });
+    }
+
+    res.setHeader("Allow", ["GET", "POST"]);
+    res.status(405).end("Method Not Allowed");
+  } catch (err) {
+    res.status(500).json({ error: "Failed to process views" });
   }
 }
-
-export default handler

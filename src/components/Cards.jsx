@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Card from "./Card";
 
 const projects = [
@@ -50,22 +49,9 @@ const projects = [
 ];
 
 function Cards() {
-  const [views, setViews] = useState({});
-
-  useEffect(() => {
-    projects.forEach(async (p) => {
-      const res = await fetch(
-        `${API_BASE}/api/views?id=${p.id}`
-      );
-      const data = await res.json();
-
-      setViews((v) => ({ ...v, [p.id]: data.views }));
-    });
-  }, []);
-
   return (
     <section className="min-h-screen px-6 py-30 text-white bg-black/40">
-      <h2 className="text-3xl font-bold text-center mb-12">
+      <h2 className="text-3xl font-bold text-center mb-12 animate-slide-up">
         My Projects
       </h2>
 
@@ -73,9 +59,8 @@ function Cards() {
         {projects.map((project, index) => (
           <Card
             key={project.id}
-            project={{ ...project, views: views[project.id] ?? 0 }}
+            project={{ ...project }}
             index={index}
-            setViews={setViews}
           />
         ))}
       </div>
