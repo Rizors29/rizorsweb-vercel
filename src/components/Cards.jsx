@@ -50,7 +50,7 @@ const projects = [
 
 function Cards() {
   return (
-    <section className="min-h-screen px-6 py-30 text-white bg-black/40">
+    <section className="px-6 py-24 text-white bg-black/40">
       <h2 className="text-3xl font-bold text-center mb-12 animate-slide-up">
         My Projects
       </h2>

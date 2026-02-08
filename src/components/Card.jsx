@@ -6,7 +6,9 @@ function Card({ project, index }) {
       className="bg-gray-500/30 rounded-xl overflow-hidden shadow-lg hover:scale-[1.05] transition block animate-slide-up"
       style={{ animationDelay: `${index * 50}ms` }}
     >
-      <img src={project.image} className="h-50 w-full object-cover" />
+      <div className="w-full aspect-[16/9] bg-zinc-800">      
+        <img src={project.image} className="h-full w-full object-cover" />
+      </div>
 
       <div className="p-5">
         <h3 className="text-xl font-semibold">{project.title}</h3>
