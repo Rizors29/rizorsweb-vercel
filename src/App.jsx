@@ -1,9 +1,10 @@
-import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home.jsx";
-import Projects from "./pages/Projects.jsx";
-import Layout from "./components/Layout.jsx";
-import About from "./pages/About.jsx";
-import Contact from "./pages/Contact.jsx";
+import { Routes, Route } from "react-router-dom"
+import Layout from "./components/Layout"
+import Home from "./pages/Home"
+import About from "./pages/About"
+import Projects from "./pages/Projects"
+import Fanarts from "./pages/Fanarts"
+import Contact from "./pages/Contact"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/fanarts" element={<Fanarts />} />
         <Route path="/contact" element={<Contact />} />
       </Route>
     </Routes>

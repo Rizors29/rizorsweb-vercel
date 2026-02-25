@@ -1,10 +1,10 @@
 import React from "react";
-import Cards from "../components/Cards";
+import ProjectsCard from "../components/ProjectsCard";
 
 class Projects extends React.Component {
   render() {
     return (
-      <Cards />
+      <ProjectsCard />
     );
   }
 }

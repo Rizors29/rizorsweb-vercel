@@ -1,6 +1,4 @@
 import React from "react"
-import { FaHeart } from "react-icons/fa"
-
 
 class About extends React.Component {
   render() {

@@ -8,7 +8,7 @@ function Navbar() {
   const navItemClass = ({ isActive }) =>
     `block py-2 transition duration-300
      ${isActive
-       ? "text-red-400 underline underline-offset-2"
+       ? "text-red-400 underline decoration-2 underline-offset-3"
        : "text-gray-300 hover:text-red-400"}`;
 
   return (
@@ -21,6 +21,7 @@ function Navbar() {
           <li><NavLink to="/" className={navItemClass}>Home</NavLink></li>
           <li><NavLink to="/about" className={navItemClass}>About</NavLink></li>
           <li><NavLink to="/projects" className={navItemClass}>Projects</NavLink></li>
+          <li><NavLink to="/fanarts" className={navItemClass}>Fanarts</NavLink></li>
           <li><NavLink to="/contact" className={navItemClass}>Contact</NavLink></li>
         </ul>
 
@@ -47,6 +48,9 @@ function Navbar() {
           </li>
           <li onClick={() => setOpen(false)}>
             <NavLink to="/projects" className={navItemClass}>Projects</NavLink>
+          </li>
+          <li onClick={() => setOpen(false)}>
+            <NavLink to="/fanarts" className={navItemClass}>Fanarts</NavLink>
           </li>
           <li onClick={() => setOpen(false)}>
             <NavLink to="/contact" className={navItemClass}>Contact</NavLink>

@@ -1,9 +1,10 @@
 import React from "react"
+import { MdEmail } from "react-icons/md";
 
 class Contact extends React.Component {
   render() {
     return (
-        <div className="
+      <div className="
         min-h-[100svh]
         text-center
         px-5 md:px-40
@@ -13,13 +14,19 @@ class Contact extends React.Component {
         ms-0 md:ms-120
         flex flex-col justify-center
         animate-slide-up">
-          <h1 className="font-bold text-3xl underline underline-offset-4 decoration-blue-500 pb-2">
-            Contact Me
-          </h1>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arzialpazri@gmail.com" target="_blank" className="">
-            ✉︎ arzialpazri@gmail.com
-          </a>
-        </div>
+        <h1 className="font-bold text-3xl underline underline-offset-4 decoration-blue-500 pb-2">
+          Contact Me
+        </h1>
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=arzialpazri@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-blue-400 transition justify-center flex items-center gap-2 my-2"
+        >
+          <MdEmail className="text-xl" />
+          arzialpazri@gmail.com
+        </a>
+      </div>
     );
   }
 }
