@@ -31,7 +31,7 @@ function ProjectsCard() {
                 <FaLaravel />
               </div>
             </div>
-            <p className="text-sm text-gray-300 mb-2">During my internship program, I built this website for CTO team at PT Finnet Indonesia.</p>
+            <p className="text-sm text-gray-300 mb-2">During my internship program, I built this web for CTO team at PT Finnet Indonesia.</p>
             <span className="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium text-blue-300 ring ring-blue-300/40">Created on Nov 2025</span>
           </div>
         </div>
@@ -60,7 +60,7 @@ function ProjectsCard() {
             </div>
             <p className="text-sm text-gray-300 mb-2">My first 2D Unity platformer game that I published. This game is about a hungry cat.</p>
             <span class="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium text-blue-300 ring ring-blue-300/40 me-2">Published on Jan 2023</span>
-            <span class="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium text-yellow-300 ring ring-yellow-300/40">3rd Place Showcase🥇</span>
+            <span class="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium text-yellow-300 ring ring-yellow-300/40">3rd Place Showcase</span>
           </div>
         </div>
         <div className="bg-gray-500/30 rounded-xl overflow-hidden shadow-lg hover:scale-[1.05] transition block animate-slide-up ring ring-white/30">
@@ -86,7 +86,7 @@ function ProjectsCard() {
                 <FaItchIo />
               </div>
             </div>
-            <p className="text-sm text-gray-300 mb-2">My first 2D Godot game that I published. This game is about people fighting each other.</p>
+            <p className="text-sm text-gray-300 mb-2">My first 2D Godot game that I published. This is a 2D fighting strategy game.</p>
             <span class="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium text-blue-300 ring ring-blue-300/40 m-1">Published on Feb 2026</span>
           </div>
         </div>
@@ -108,7 +108,7 @@ function ProjectsCard() {
           <div className="p-5">
             <h3 className="text-xl font-semibold mb-1">Matematika atau Mati</h3>
             <p className="text-sm text-gray-300 mb-2">This is a Math game. I made this game on Uni Craft Your World. 
-              <span><a href="https://www.youtube.com/@peanut8819/videos" className="text-blue-400 underline ms-1">How to make this game?</a></span>
+              <span><a href="https://www.youtube.com/@peanut8819/videos" className="text-blue-400 underline ms-1">How to make this?</a></span>
               </p>
             <span class="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium text-blue-300 inset-ring inset-ring-blue-300/20">Published on Jan 2024</span>
           </div>
