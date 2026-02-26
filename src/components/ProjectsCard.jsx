@@ -106,7 +106,10 @@ function ProjectsCard() {
             </a>
           </div>
           <div className="p-5">
-            <h3 className="text-xl font-semibold mb-1">Matematika atau Mati</h3>
+            <div className="justify-between flex mb-1 font-semibold">
+              <h3 className="text-xl">Matematika atau Mati</h3>
+              <img src="./uni_icon.png" alt="Castle icon" className="w-5 h-5" />
+            </div>
             <p className="text-sm text-gray-300 mb-2">This is a Math game. I made this game on Uni Craft Your World. 
               <span><a href="https://www.youtube.com/@peanut8819/videos" className="text-blue-400 underline ms-1">How to make this?</a></span>
               </p>
@@ -129,7 +132,10 @@ function ProjectsCard() {
             </a>
           </div>
           <div className="p-5">
-            <h3 className="text-xl font-semibold mb-1">Save the Car</h3>
+            <div className="justify-between flex mb-1 font-semibold">
+              <h3 className="text-xl">Save the Car</h3>
+              <img src="./castle_icon.png" alt="Castle icon" className="w-5 h-5" />
+            </div>
             <p className="text-sm text-gray-300 mb-2">I made this game on Castle platform on my phone. Save the red car to the finish line.</p>
             <span class="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium text-blue-300 inset-ring inset-ring-blue-300/20">Published on Jan 2022</span>
           </div>
@@ -150,7 +156,10 @@ function ProjectsCard() {
             </a>
           </div>
           <div className="p-5">
-            <h3 className="text-xl font-semibold mb-1">Zombie Shooter</h3>
+            <div className="justify-between flex mb-1 font-semibold">
+              <h3 className="text-xl">Zombie Shooter</h3>
+              <img src="./greenfoot_icon.png" alt="Castle icon" className="w-5 h-5" />
+            </div>
             <p className="text-sm text-gray-300 mb-2">My first 2D Greenfoot survival game that I published. Shoot the zombies to win.</p>
             <span class="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium text-blue-300 inset-ring inset-ring-blue-300/20">Published on March 2023</span>
           </div>

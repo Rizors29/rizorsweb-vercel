@@ -25,7 +25,7 @@ function FanartsCard() {
           </video>
           <div className="p-5">
             <h3 className="text-xl font-semibold mb-1">Ray Versi Rambut Poni</h3>
-            <p className="text-sm text-gray-300 mb-2">I like participating in a fanart competitions on Discord. I usually draw my fanarts on IbisPaint.</p>
+            <p className="text-sm text-gray-300 mb-2">I like participating in fanart competitions on Discord. I usually use IbisPaint.</p>
             <span class="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium text-blue-300 inset-ring inset-ring-blue-300/20 me-2">Drawn on April 2024</span>
             <span class="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium text-yellow-300 inset-ring inset-ring-yellow-300/20">Won the Competition</span>
           </div>
@@ -73,7 +73,7 @@ function FanartsCard() {
           </div>
           <div className="p-5">
             <h3 className="text-xl font-semibold mb-1">Mba Sasa dan Kang Bakso</h3>
-            <p className="text-sm text-gray-300 mb-2">This is my fanart that won a competition on Discord. As a reward, this fanart was added into a game.</p>
+            <p className="text-sm text-gray-300 mb-2">This is my fanart that won a competition. As a reward, the fanart was added into a game.</p>
             <span class="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium text-blue-300 inset-ring inset-ring-blue-300/20 me-2">Drawn on June 2022</span>
             <span class="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium text-yellow-300 inset-ring inset-ring-yellow-300/20">Won the Competition</span>
           </div>
