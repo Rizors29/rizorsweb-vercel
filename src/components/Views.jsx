@@ -28,7 +28,7 @@ function Views({ id }) {
   }, [id]);
 
   return (
-    <div className="mt-2 flex items-center gap-2 text-white">
+    <div className="mt-2 flex items-center gap-2 ms-0 md:ms-120 animate-slide-up text-white">
       <FaEye />
       <span>{views} views</span>
     </div>
