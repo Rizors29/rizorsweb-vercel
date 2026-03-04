@@ -25,7 +25,18 @@ function FanartsCard() {
           </video>
           <div className="p-5">
             <h3 className="text-xl font-semibold mb-1">Ray Versi Rambut Poni</h3>
-            <p className="text-sm text-gray-300 mb-2">I like participating in fanart competitions on Discord. I usually use IbisPaint.</p>
+            <p className="text-sm text-gray-300 mb-2">
+              I like participating in fanart competitions on Discord. I usually use
+              <a
+                href="https://play.google.com/store/apps/details?id=jp.ne.ibis.ibispaintx.app&hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 underline ms-1"
+              >
+                ibis Paint X
+              </a>
+              .
+            </p>
             <span class="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium text-blue-300 inset-ring inset-ring-blue-300/20 me-2">Drawn on April 2024</span>
             <span class="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium text-yellow-300 inset-ring inset-ring-yellow-300/20">Won the Competition</span>
           </div>

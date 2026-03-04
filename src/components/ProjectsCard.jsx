@@ -31,7 +31,18 @@ function ProjectsCard() {
                 <FaLaravel />
               </div>
             </div>
-            <p className="text-sm text-gray-300 mb-2">During my internship program, I built this web for CTO team at PT Finnet Indonesia.</p>
+            <p className="text-sm text-gray-300 mb-2">
+              During my internship program, I built this web for CTO team at
+              <a
+                href="https://www.finpay.id/tentangkami"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 underline ms-1"
+              >
+                PT Finnet Indonesia
+              </a>
+              .
+            </p>
             <span className="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium text-blue-300 ring ring-blue-300/40">Created on Nov 2025</span>
           </div>
         </div>
@@ -110,9 +121,17 @@ function ProjectsCard() {
               <h3 className="text-xl">Matematika atau Mati</h3>
               <img src="./uni_icon.png" alt="Castle icon" className="w-5 h-5" />
             </div>
-            <p className="text-sm text-gray-300 mb-2">This is a Math game. I made this game on Uni Craft Your World. 
-              <span><a href="https://www.youtube.com/@peanut8819/videos" className="text-blue-400 underline ms-1">How to make this?</a></span>
-              </p>
+            <p className="text-sm text-gray-300 mb-2">
+              This is a Math game. I made this game on Uni Craft Your World.
+              <a
+                href="https://www.youtube.com/@peanut8819/videos"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 underline ms-1"
+              >
+                How to make this?
+              </a>
+            </p>
             <span class="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium text-blue-300 inset-ring inset-ring-blue-300/20">Published on Jan 2024</span>
           </div>
         </div>
