@@ -18,8 +18,19 @@ function ProjectsCard() {
 
       <div className="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
         <div className="bg-gray-500/30 rounded-xl overflow-hidden shadow-lg hover:scale-[1.05] transition block animate-slide-up ring ring-white/30">
-          <div className="w-full aspect-[16/9] bg-zinc-800">
+          <div className="relative w-full aspect-[16/9] bg-zinc-800">
             <img src="./img/WebsiteCover.png" className="h-full w-full object-cover" />
+            <a
+              href="https://cto-website.vercel.app/"
+              target="_blank"
+              className="absolute bottom-4 right-0
+               text-white text-sm font-semibold
+               rounded-md px-4 py-2"
+            >
+              <span className="bg-white/80 text-black ring-1 ring-black/20 font-bold rounded-full px-5 py-2">
+                See Website
+              </span>
+            </a>
           </div>
           <div className="p-5">
             <div className="justify-between flex mb-1">
