@@ -6,9 +6,10 @@ import { SiGodotengine } from "react-icons/si";
 
 export const projects = [
   {
+    id: 1,
     title: "Website CTO",
     image: "./img/WebsiteCover.png",
-    link: "https://cto-website.vercel.app/",
+    buttonLink: "https://cto-website.vercel.app/",
     buttonText: "See Website",
 
     reactIcon: [FaReact, RiTailwindCssFill, TbBrandVite, FaLaravel],
@@ -21,6 +22,7 @@ export const projects = [
 
     badges: [
       {
+        id: 1,
         text: "Created on Nov 2025",
         color: "blue"
       }
@@ -28,6 +30,7 @@ export const projects = [
   },
 
   {
+    id: 2,
     title: "Kucing Oren Lapar",
     image: "./img/Game4.jpeg",
     link: "https://yellorddev.itch.io/kucing-oren-lapar",
@@ -39,10 +42,12 @@ export const projects = [
 
     badges: [
       {
+        id: 1,
         text: "Published on Jan 2023",
         color: "blue"
       },
       {
+        id: 2,
         text: "3rd Place Showcase",
         color: "yellow"
       }
@@ -50,6 +55,7 @@ export const projects = [
   },
 
   {
+    id: 3,
     title: "Perang Antar Warga",
     image: "./img/Game5.jpeg",
     link: "https://yellorddev.itch.io/perang-antar-warga",
@@ -61,6 +67,7 @@ export const projects = [
 
     badges: [
       {
+        id: 1,
         text: "Published on Feb 2026",
         color: "blue"
       }
@@ -68,6 +75,7 @@ export const projects = [
   },
 
   {
+    id: 4,
     title: "Matematika atau Mati",
     image: "./img/Game1.jpeg",
     link: "https://uni.prd.h5.uni2play.com/prod/landing/?to=uni://unicc.com/world/detail?id=FDFLA9X_264",
@@ -83,6 +91,7 @@ export const projects = [
 
     badges: [
       {
+        id: 1,
         text: "Published on Jan 2024",
         color: "blue"
       }
@@ -90,6 +99,7 @@ export const projects = [
   },
 
   {
+    id: 5,
     title: "Save the Car",
     image: "./img/Game3.jpeg",
     link: "https://castle.xyz/d/J-W5rWoVz",
@@ -101,6 +111,7 @@ export const projects = [
 
     badges: [
       {
+        id: 1,
         text: "Published on Jan 2022",
         color: "blue"
       }
@@ -108,6 +119,7 @@ export const projects = [
   },
 
   {
+    id: 6,
     title: "Zombie Shooter",
     image: "./img/Game2.jpeg",
     link: "https://www.greenfoot.org/scenarios/30953",
@@ -119,6 +131,7 @@ export const projects = [
 
     badges: [
       {
+        id: 1,
         text: "Published on March 2023",
         color: "blue"
       }
