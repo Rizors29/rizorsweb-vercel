@@ -33,7 +33,7 @@ export const projects = [
     id: 2,
     title: "Kucing Oren Lapar",
     image: "./img/Game4.jpeg",
-    link: "https://yellorddev.itch.io/kucing-oren-lapar",
+    buttonLink: "https://yellorddev.itch.io/kucing-oren-lapar",
     buttonText: "Play Now",
 
     reactIcon: [FaUnity, FaItchIo],
@@ -58,7 +58,7 @@ export const projects = [
     id: 3,
     title: "Perang Antar Warga",
     image: "./img/Game5.jpeg",
-    link: "https://yellorddev.itch.io/perang-antar-warga",
+    buttonLink: "https://yellorddev.itch.io/perang-antar-warga",
     buttonText: "Play Now",
 
     reactIcon: [SiGodotengine, FaItchIo],
@@ -78,7 +78,7 @@ export const projects = [
     id: 4,
     title: "Matematika atau Mati",
     image: "./img/Game1.jpeg",
-    link: "https://uni.prd.h5.uni2play.com/prod/landing/?to=uni://unicc.com/world/detail?id=FDFLA9X_264",
+    buttonLink: "https://uni.prd.h5.uni2play.com/prod/landing/?to=uni://unicc.com/world/detail?id=FDFLA9X_264",
     buttonText: "Play Now",
 
     localIcon: "./uni_icon.png",
@@ -102,7 +102,7 @@ export const projects = [
     id: 5,
     title: "Save the Car",
     image: "./img/Game3.jpeg",
-    link: "https://castle.xyz/d/J-W5rWoVz",
+    buttonLink: "https://castle.xyz/d/J-W5rWoVz",
     buttonText: "Play Now",
 
     localIcon: "./castle_icon.png",
@@ -122,7 +122,7 @@ export const projects = [
     id: 6,
     title: "Zombie Shooter",
     image: "./img/Game2.jpeg",
-    link: "https://www.greenfoot.org/scenarios/30953",
+    buttonLink: "https://www.greenfoot.org/scenarios/30953",
     buttonText: "Play Now",
 
     localIcon: "./greenfoot_icon.png",
