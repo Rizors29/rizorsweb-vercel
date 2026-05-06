@@ -4,7 +4,7 @@ function ProjectsCard({ title, image, buttonLink, buttonText, reactIcon, localIc
       <div className="relative w-full aspect-[16/9] bg-zinc-800">
         <img src={image} className="h-full w-full object-cover" />
         <a href={buttonLink} target="_blank" rel="noopener noreferrer" className="absolute bottom-4 right-0 text-white text-sm font-semibold rounded-md px-4 py-2">
-          <span className="bg-white/80 text-black font-bold rounded-full px-5 py-2 ring-1 ring-black/20">
+          <span className="bg-white/80 text-black font-bold rounded-full px-5 py-2 ring-1 ring-black/20 hover:bg-blue-400 transition duration-300">
             {buttonText}
           </span>
         </a>
