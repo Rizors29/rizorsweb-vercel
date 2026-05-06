@@ -14,10 +14,9 @@ function Contact() {
     const { name, email, message } = form;
     const subject = encodeURIComponent(`Message from ${name}`);
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-    window.open(
-      `https://mail.google.com/mail/?view=cm&fs=1&to=arzialpazri@gmail.com&su=${subject}&body=${body}`,
-      "_blank"
-    );
+    const a = document.createElement("a");
+    a.href = `mailto:arzialpazri@gmail.com?subject=${subject}&body=${body}`;
+    a.click();
     setSent(true);
     setForm({ name: "", email: "", message: "" });
     setTimeout(() => setSent(false), 4000);
@@ -30,7 +29,7 @@ function Contact() {
       </h1>
 
       <a
-        href="https://mail.google.com/mail/?view=cm&fs=1&to=arzialpazri@gmail.com"
+        href="mailto:arzialpazri@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-blue-400 transition justify-center flex items-center gap-2 my-2"
@@ -90,7 +89,7 @@ function Contact() {
         </button>
 
         {sent && (
-          <p className="text-center text-blue-400 text-sm">
+          <p className="text-center text-white text-sm">
             Opening Gmail... thanks for reaching out!
           </p>
         )}
