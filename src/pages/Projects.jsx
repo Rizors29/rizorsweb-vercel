@@ -13,9 +13,10 @@ function Projects() {
         My Projects
       </h2>
       <div className="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <ProjectsCard
             key={project.id}
+            index={index}
             {...project}
           />
         ))}

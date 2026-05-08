@@ -13,9 +13,10 @@ function Fanarts() {
         My Fanarts
       </h2>
       <div className="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
-        {fanarts.map((fanart) => (
+        {fanarts.map((fanart, index) => (
           <FanartsCard
             key={fanart.id}
+            index={index}
             {...fanart}
           />
         ))}

@@ -1,6 +1,9 @@
-function FanartsCard({ title, video, image, description, descLink, badges }) {
+function FanartsCard({ title, video, image, description, descLink, badges, index = 0 }) {
   return (
-    <div className="bg-gray-500/30 rounded-xl overflow-hidden shadow-lg hover:scale-[1.05] transition block animate-slide-up ring ring-white/30">
+    <div
+      className="bg-gray-500/30 rounded-xl overflow-hidden shadow-lg hover:scale-[1.05] transition block animate-slide-up ring ring-white/30"
+      style={{ animationDelay: `${index * 0.15}s`, animationFillMode: 'both' }}
+    >
       {video && (
         <video className="w-full object-cover" autoPlay loop muted playsInline>
           <source src={video} type="video/mp4" />

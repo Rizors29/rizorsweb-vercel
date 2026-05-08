@@ -1,6 +1,9 @@
-function ProjectsCard({ title, image, buttonLink, buttonText, reactIcon, localIcon, description, descLink, badges }) {
+function ProjectsCard({ title, image, buttonLink, buttonText, reactIcon, localIcon, description, descLink, badges, index = 0 }) {
   return (
-    <div className="bg-gray-500/30 rounded-xl overflow-hidden shadow-lg hover:scale-[1.05] transition block animate-slide-up ring ring-white/30">
+    <div
+      className="bg-gray-500/30 rounded-xl overflow-hidden shadow-lg hover:scale-[1.05] transition block animate-slide-up ring ring-white/30"
+      style={{ animationDelay: `${index * 0.15}s`, animationFillMode: 'both' }}
+    >
       <div className="relative w-full aspect-[16/9] bg-zinc-800">
         <img src={image} className="h-full w-full object-cover" />
         <a href={buttonLink} target="_blank" rel="noopener noreferrer" className="absolute bottom-4 right-0 text-white text-sm font-semibold rounded-md px-4 py-2">
