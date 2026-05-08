@@ -16,16 +16,26 @@ function ProjectsCard({ title, image, buttonLink, buttonText, reactIcon, localIc
             {title}
           </h3>
           {localIcon && (
-            <img
-              src={localIcon}
-              alt="platform icon"
-              className="w-5 h-5"
-            />
+            <div className="relative group flex items-center">
+              <img
+                src={localIcon.src}
+                alt="platform icon"
+                className="w-5 h-5"
+              />
+              <span className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black/80 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition pointer-events-none">
+                {localIcon.tooltip}
+              </span>
+            </div>
           )}
           {reactIcon && (
             <div className="flex gap-2">
-              {reactIcon?.map((Icon, id) => (
-                <Icon key={id} />
+              {reactIcon?.map(({ icon: Icon, tooltip }, id) => (
+                <div key={id} className="relative group flex items-center">
+                  <Icon />
+                  <span className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black/80 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition pointer-events-none">
+                    {tooltip}
+                  </span>
+                </div>
               ))}
             </div>
           )}

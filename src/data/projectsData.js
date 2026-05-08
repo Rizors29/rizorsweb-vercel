@@ -12,7 +12,12 @@ export const projects = [
     buttonLink: "https://cto-website.vercel.app/",
     buttonText: "See Website",
 
-    reactIcon: [FaReact, RiTailwindCssFill, TbBrandVite, FaLaravel],
+    reactIcon: [
+      { icon: FaReact, tooltip: "React" },
+      { icon: RiTailwindCssFill, tooltip: "Tailwind CSS" },
+      { icon: TbBrandVite, tooltip: "Vite" },
+      { icon: FaLaravel, tooltip: "Laravel" },
+    ],
 
     description: "During my internship program, I built this web for CTO team at ",
     descLink: {
@@ -36,7 +41,10 @@ export const projects = [
     buttonLink: "https://yellorddev.itch.io/kucing-oren-lapar",
     buttonText: "Play Now",
 
-    reactIcon: [FaUnity, FaItchIo],
+    reactIcon: [
+      { icon: FaUnity, tooltip: "Unity" },
+      { icon: FaItchIo, tooltip: "itch.io" },
+    ],
 
     description: "My first 2D Unity platformer game that I published. This game is about a hungry cat.",
 
@@ -61,7 +69,10 @@ export const projects = [
     buttonLink: "https://yellorddev.itch.io/perang-antar-warga",
     buttonText: "Play Now",
 
-    reactIcon: [SiGodotengine, FaItchIo],
+    reactIcon: [
+      { icon: SiGodotengine, tooltip: "Godot" },
+      { icon: FaItchIo, tooltip: "itch.io" },
+    ],
 
     description: "My first 2D Godot game that I published. This is a 2D fighting strategy game.",
 
@@ -81,7 +92,7 @@ export const projects = [
     buttonLink: "https://uni.prd.h5.uni2play.com/prod/landing/?to=uni://unicc.com/world/detail?id=FDFLA9X_264",
     buttonText: "Play Now",
 
-    localIcon: "./uni_icon.png",
+    localIcon: { src: "./uni_icon.png", tooltip: "Uni Craft" },
 
     description: "This is a Math game. I made this game on Uni Craft Your World. ",
     descLink: {
@@ -105,7 +116,7 @@ export const projects = [
     buttonLink: "https://castle.xyz/d/J-W5rWoVz",
     buttonText: "Play Now",
 
-    localIcon: "./castle_icon.png",
+    localIcon: { src: "./castle_icon.png", tooltip: "Castle" },
 
     description: "I made this game on Castle platform on my phone. Save the red car to the finish line.",
 
@@ -125,7 +136,7 @@ export const projects = [
     buttonLink: "https://www.greenfoot.org/scenarios/30953",
     buttonText: "Play Now",
 
-    localIcon: "./greenfoot_icon.png",
+    localIcon: { src: "./greenfoot_icon.png", tooltip: "Greenfoot" },
 
     description: "My first 2D Greenfoot survival game that I published. Shoot the zombies to win.",
 
