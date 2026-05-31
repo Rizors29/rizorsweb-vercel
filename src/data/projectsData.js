@@ -125,7 +125,7 @@ export const projects = [
     badges: [
       {
         id: 1,
-        text: "Published on Jan 2022",
+        text: "Published on April 2026",
         color: "blue"
       }
     ]
