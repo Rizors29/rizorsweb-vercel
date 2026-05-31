@@ -2,7 +2,7 @@ import { FaReact, FaLaravel, FaItchIo } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandVite } from "react-icons/tb";
 import { FaUnity } from "react-icons/fa6";
-import { SiGodotengine } from "react-icons/si";
+import { SiGodotengine, SiRobloxstudio } from "react-icons/si";
 
 export const projects = [
   {
@@ -111,14 +111,16 @@ export const projects = [
 
   {
     id: 5,
-    title: "Save the Car",
+    title: "Oreo Tower",
     image: "./img/Game3.jpeg",
-    buttonLink: "https://castle.xyz/d/J-W5rWoVz",
+    buttonLink: "https://www.roblox.com/games/125111872877155/Oreo-Tower",
     buttonText: "Play Now",
 
-    localIcon: { src: "./castle_icon.png", tooltip: "Castle" },
+    reactIcon: [
+      { icon: SiRobloxstudio, tooltip: "Roblox" },
+    ],
 
-    description: "I made this game on Castle platform on my phone. Save the red car to the finish line.",
+    description: "I made this game on Roblox Studio. This game is simple, just an oreo obby tower.",
 
     badges: [
       {
