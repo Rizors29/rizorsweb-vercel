@@ -1,11 +1,24 @@
+import { useState } from "react";
+
 function ProjectsCard({ title, image, buttonLink, buttonText, reactIcon, localIcon, description, descLink, badges, index = 0 }) {
+  const [imgLoaded, setImgLoaded] = useState(false);
+
   return (
     <div
       className="bg-gray-500/30 rounded-xl overflow-hidden shadow-lg hover:scale-[1.05] transition block animate-slide-up ring ring-white/30"
       style={{ animationDelay: `${index * 0.15}s`, animationFillMode: 'both' }}
     >
       <div className="relative w-full aspect-[16/9] bg-zinc-800">
-        <img src={image} className="h-full w-full object-cover" />
+        {!imgLoaded && (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-8 h-8 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+          </div>
+        )}
+        <img
+          src={image}
+          className={`h-full w-full object-cover transition-opacity duration-300 ${imgLoaded ? "opacity-100" : "opacity-0"}`}
+          onLoad={() => setImgLoaded(true)}
+        />
         <a href={buttonLink} target="_blank" rel="noopener noreferrer" className="absolute bottom-4 right-0 text-white text-sm font-semibold rounded-md px-4 py-2">
           <span className="bg-white/80 text-black font-bold rounded-full px-5 py-2 ring-1 ring-black/20 hover:bg-blue-400 transition duration-300">
             {buttonText}
