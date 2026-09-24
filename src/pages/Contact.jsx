@@ -23,7 +23,7 @@ function Contact() {
   }
 
   return (
-    <div className="min-h-[100svh] text-center px-5 md:px-40 bg-black/40 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none text-white ms-0 md:ms-120 flex flex-col justify-center animate-slide-up">
+    <div className="min-h-[100svh] text-center px-5 md:px-40 text-white ms-0 md:ms-120 flex flex-col justify-center animate-slide-up">
       <h1 className="font-bold text-3xl underline underline-offset-4 decoration-blue-500 pb-2">
         Contact Me
       </h1>
@@ -81,13 +81,28 @@ function Contact() {
           />
         </div>
 
-        <button
-          type="submit"
-          className="px-6 py-2 rounded-full bg-white/80 text-black font-bold hover:bg-blue-400 transition duration-300 cursor-pointer"
-        >
-          Send
-        </button>
-
+        <div className="flex gap-3">
+          <button
+            type="submit"
+            className="flex-1 md:flex-3 px-6 py-2 rounded-full bg-white/80 text-black font-bold hover:bg-blue-400 transition duration-300 cursor-pointer"
+          >
+            Send
+          </button>
+          <a
+            href="https://drive.google.com/file/d/1I1m61D4D3Xz-twsHdFGC-TbcaxYv6QdD/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-2 md:flex-2"
+          >
+            <button
+              type="button"
+              className="w-full px-6 py-2 rounded-full bg-white/80 backdrop-blur-md text-black font-bold hover:bg-blue-400 transition duration-300 cursor-pointer"
+            >
+              View Resume
+            </button>
+          </a>
+        </div>
+        
         {sent && (
           <p className="text-center text-white text-sm">
             Opening Gmail... thanks for reaching out!

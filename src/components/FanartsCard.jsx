@@ -5,7 +5,7 @@ function FanartsCard({ title, video, image, description, descLink, badges, index
 
   return (
     <div
-      className="bg-gray-500/30 rounded-xl overflow-hidden shadow-lg hover:scale-[1.05] transition block animate-slide-up ring ring-white/30"
+      className="bg-gray-500/30 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:scale-[1.05] transition block animate-slide-up ring ring-white/30"
       style={{ animationDelay: `${index * 0.15}s`, animationFillMode: 'both' }}
     >
       {video && (

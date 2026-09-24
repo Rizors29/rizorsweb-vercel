@@ -12,7 +12,7 @@ function Layout() {
         <Outlet />
       </main>
 
-      <footer className="fixed bottom-0 w-full py-3 text-center text-sm text-white/50 z-10">
+      <footer className="fixed bottom-0 w-full py-3 text-center text-sm text-white/50 bg-black/30 backdrop-blur-md z-50">
         &copy; {new Date().getFullYear()} RizorsWeb
       </footer>
     </>

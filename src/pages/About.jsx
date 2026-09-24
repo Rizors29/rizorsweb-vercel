@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div className="min-h-[100svh] text-center px-5 md:px-40 bg-black/40 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none text-white ms-0 md:ms-120 flex flex-col justify-center animate-slide-up">
+    <div className="min-h-[100svh] text-center px-5 md:px-40 text-white ms-0 md:ms-120 justify-center animate-slide-up">
       <h1 className="font-bold text-3xl pb-4 underline underline-offset-4 decoration-red-500">
         About Me
       </h1>
