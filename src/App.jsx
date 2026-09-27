@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react"
 import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
 import About from "./pages/About"
@@ -6,34 +7,66 @@ import Fanarts from "./pages/Fanarts"
 import Contact from "./pages/Contact"
 
 function App() {
+  const [dimmed, setDimmed] = useState(false)
+  const projectsRef = useRef(null)
+  const fanartsRef = useRef(null)
+  const aboutMRef = useRef(null)
+  const projectsMRef = useRef(null)
+  const fanartsMRef = useRef(null)
+  const contactMRef = useRef(null)
+
+  useEffect(() => {
+    const visibleSections = new Set()
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            visibleSections.add(entry.target)
+          } else {
+            visibleSections.delete(entry.target)
+          }
+        })
+        setDimmed(visibleSections.size > 0)
+      },
+      { threshold: 0.05, rootMargin: "0px 0px -70% 0px" }
+    )
+
+    const refs = [projectsRef, fanartsRef, aboutMRef, projectsMRef, fanartsMRef, contactMRef]
+    refs.forEach((ref) => {
+      if (ref.current) observer.observe(ref.current)
+    })
+
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <>
       <Navbar />
 
       <div className="fixed inset-0 -z-10 bg-[url(/img/background.png)] bg-cover bg-[position:15%_center] md:bg-center" />
 
+      {/* Dark overlay — fades in when Projects or Fanarts is visible */}
+      <div
+        className="fixed inset-0 -z-10 bg-black/30 backdrop-blur-sm pointer-events-none transition-opacity duration-700"
+        style={{ opacity: dimmed ? 1 : 0 }}
+      />
+
       <main className="w-full">
         <section id="home"><Home /></section>
 
         <div className="hidden md:block">
           <section id="about"><About /></section>
-          <div className="h-32 bg-gradient-to-b from-transparent to-black/40 pointer-events-none" />
-          <div className="bg-black/40">
-            <section id="projects"><Projects /></section>
-            <section id="fanarts"><Fanarts /></section>
-          </div>
-          <div className="h-32 bg-gradient-to-b from-black/40 to-transparent pointer-events-none" />
+          <section id="projects" ref={projectsRef}><Projects /></section>
+          <section id="fanarts" ref={fanartsRef}><Fanarts /></section>
           <section id="contact"><Contact /></section>
         </div>
 
         <div className="md:hidden">
-          <div className="h-32 bg-gradient-to-b from-transparent to-black/40 pointer-events-none" />
-          <div className="bg-black/40">
-            <section id="about-m"><About /></section>
-            <section id="projects-m"><Projects /></section>
-            <section id="fanarts-m"><Fanarts /></section>
-            <section id="contact-m"><Contact /></section>
-          </div>
+          <section id="about-m" ref={aboutMRef}><About /></section>
+          <section id="projects-m" ref={projectsMRef}><Projects /></section>
+          <section id="fanarts-m" ref={fanartsMRef}><Fanarts /></section>
+          <section id="contact-m" ref={contactMRef}><Contact /></section>
         </div>
       </main>
 
