@@ -16,6 +16,12 @@ function App() {
   const contactMRef = useRef(null)
 
   useEffect(() => {
+    // Lock viewport height to prevent background resize when mobile toolbar hides
+    const vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty("--initial-vh", `${vh}px`)
+  }, [])
+
+  useEffect(() => {
     const visibleSections = new Set()
 
     const observer = new IntersectionObserver(
@@ -44,8 +50,16 @@ function App() {
     <>
       <Navbar />
 
-      {/* Background — uses 100dvh to prevent zoom when mobile browser address bar hides */}
-      <div id="bg" />
+      <div
+        className="fixed -z-10 w-full bg-[url(/img/background.png)] bg-cover bg-[position:15%_center] md:bg-center"
+        style={{
+          top: 0,
+          left: 0,
+          right: 0,
+          height: "calc(var(--initial-vh, 1vh) * 100)",
+          minHeight: "calc(var(--initial-vh, 1vh) * 100)",
+        }}
+      />
 
       {/* Dark overlay — fades in when Projects or Fanarts is visible */}
       <div
