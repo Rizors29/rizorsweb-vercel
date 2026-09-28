@@ -51,11 +51,3 @@ input:-webkit-autofill:focus {
     }
   }
 }
-
-/* Prevent background resize when mobile browser toolbar hides/shows */
-.bg-fixed-mobile {
-  background-attachment: scroll;
-  background-size: cover;
-  height: 100vh;
-  height: calc(var(--initial-vh, 1vh) * 100);
-}
