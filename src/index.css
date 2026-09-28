@@ -1,5 +1,23 @@
 @import "tailwindcss";
 
+/* Fix mobile background zoom — lock to dynamic viewport height */
+#bg {
+  position: fixed;
+  inset: 0;
+  height: 100dvh;
+  width: 100%;
+  background-image: url(/img/background.png);
+  background-size: cover;
+  background-position: 15% center;
+  z-index: -10;
+}
+
+@media (min-width: 768px) {
+  #bg {
+    background-position: center;
+  }
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;

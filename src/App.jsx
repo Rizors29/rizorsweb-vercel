@@ -44,7 +44,8 @@ function App() {
     <>
       <Navbar />
 
-      <div className="fixed inset-0 -z-10 bg-[url(/img/background.png)] bg-cover bg-[position:15%_center] md:bg-center" />
+      {/* Background — uses 100dvh to prevent zoom when mobile browser address bar hides */}
+      <div id="bg" />
 
       {/* Dark overlay — fades in when Projects or Fanarts is visible */}
       <div

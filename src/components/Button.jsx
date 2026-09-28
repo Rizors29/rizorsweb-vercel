@@ -2,7 +2,8 @@ import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Button() {
   function scrollToProjects() {
-    const el = document.getElementById("projects");
+    const isMobile = window.innerWidth < 768;
+    const el = document.getElementById(isMobile ? "projects-m" : "projects");
     if (el) el.scrollIntoView({ behavior: "smooth" });
   }
 
