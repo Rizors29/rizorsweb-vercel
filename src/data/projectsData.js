@@ -4,13 +4,21 @@ import { TbBrandVite } from "react-icons/tb";
 import { FaUnity } from "react-icons/fa6";
 import { SiGodotengine, SiRobloxstudio } from "react-icons/si";
 
+import website1 from "../assets/websites/Website1.png"
+import website2 from "../assets/websites/Website2.png"
+import game2 from "../assets/games/Game2.jpeg"
+import game3 from "../assets/games/Game3.jpeg"
+import game4 from "../assets/games/Game4.jpeg"
+import game5 from "../assets/games/Game5.jpeg"
+
 export const projects = [
   {
     id: 1,
+    category: "website",
     title: "Website CTO",
-    image: "./img/WebsiteCover.png",
+    image: website1,
     buttonLink: "https://cto-website.vercel.app/",
-    buttonText: "See Website",
+    buttonText: "View Website",
 
     reactIcon: [
       { icon: FaReact, tooltip: "React" },
@@ -36,8 +44,9 @@ export const projects = [
 
   {
     id: 2,
+    category: "game",
     title: "Kucing Oren Lapar",
-    image: "./img/Game4.jpeg",
+    image: game4,
     buttonLink: "https://yellorddev.itch.io/kucing-oren-lapar",
     buttonText: "Play Now",
 
@@ -64,8 +73,9 @@ export const projects = [
 
   {
     id: 3,
+    category: "game",
     title: "Perang Antar Warga",
-    image: "./img/Game5.jpeg",
+    image: game5,
     buttonLink: "https://yellorddev.itch.io/perang-antar-warga",
     buttonText: "Play Now",
 
@@ -87,32 +97,33 @@ export const projects = [
 
   {
     id: 4,
-    title: "Matematika atau Mati",
-    image: "./img/Game1.jpeg",
-    buttonLink: "https://uni.prd.h5.uni2play.com/prod/landing/?to=uni://unicc.com/world/detail?id=FDFLA9X_264",
-    buttonText: "Play Now",
+    category: "website",
+    title: "Uni Craft Profile Web",
+    image: website2,
+    buttonLink: "https://gilang-uni-website.vercel.app",
+    buttonText: "View Website",
 
-    localIcon: { src: "./uni_icon.png", tooltip: "Uni Craft" },
+    reactIcon: [
+      { icon: FaReact, tooltip: "React" },
+      { icon: RiTailwindCssFill, tooltip: "Tailwind CSS" },
+      { icon: TbBrandVite, tooltip: "Vite" },
+    ],
 
-    description: "This is a Math game. I made this game on Uni Craft Your World. ",
-    descLink: {
-      name: "How to make this?",
-      link: "https://www.youtube.com/@peanut8819/videos"
-    },
+    description: "A web version of my Uni Craft profile, you can view it without installing the app.",
 
     badges: [
       {
         id: 1,
-        text: "Published on Jan 2024",
+        text: "Created on Oct 2026",
         color: "blue"
       }
     ]
   },
-
   {
     id: 5,
+    category: "game",
     title: "Oreo Tower",
-    image: "./img/Game3.jpeg",
+    image: game3,
     buttonLink: "https://www.roblox.com/games/125111872877155/Oreo-Tower",
     buttonText: "Play Now",
 
@@ -133,8 +144,9 @@ export const projects = [
 
   {
     id: 6,
+    category: "game",
     title: "Zombie Shooter",
-    image: "./img/Game2.jpeg",
+    image: game2,
     buttonLink: "https://www.greenfoot.org/scenarios/30953",
     buttonText: "Play Now",
 

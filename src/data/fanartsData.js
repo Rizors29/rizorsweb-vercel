@@ -1,8 +1,15 @@
+import fanart1 from "../assets/fanarts/Fanart1.jpeg"
+import fanart2 from "../assets/fanarts/Fanart2.jpeg"
+import fanart3 from "../assets/fanarts/Fanart3.mp4"
+import fanart4 from "../assets/fanarts/Fanart4.jpeg"
+import fanart5 from "../assets/fanarts/Fanart5.mp4"
+import fanart6 from "../assets/fanarts/Fanart6.mp4"
+
 export const fanarts = [
   {
     id: 1,
     title: "Ray Versi Rambut Poni",
-    video: "./img/Fanart3.mp4",
+    video: fanart3,
 
     description: "I like participating in fanart competitions on Discord. I usually use ",
     descLink: {
@@ -26,7 +33,7 @@ export const fanarts = [
   {
     id: 2,
     title: "Eliga Ngelempar Bakso",
-    video: "./img/Fanart6.mp4",
+    video: fanart6,
 
     description: "Eliga is a waitress in Bakso Simulator 2. This fanart took about 6 hours.",
 
@@ -41,7 +48,7 @@ export const fanarts = [
   {
     id: 3,
     title: "Mba Eci Makan Es Krim",
-    video: "./img/Fanart5.mp4",
+    video: fanart5,
     description: "She is Eci, this character is inspired by the game School Cafeteria Simulator.",
 
     badges: [
@@ -56,7 +63,7 @@ export const fanarts = [
   {
     id: 4,
     title: "Kang Basket dan Emak",
-    image: "./img/Fanart1.jpeg",
+    image: fanart1,
     description: "These two characters are inspired by the game Warnet Life by Akhir Pekan Studio.",
 
     badges: [
@@ -71,7 +78,7 @@ export const fanarts = [
   {
     id: 5,
     title: "Mba Penyihir",
-    image: "./img/Fanart4.jpeg",
+    image: fanart4,
     description: "This is a witch, also inspired by the game Warnet Life by Akhir Pekan Studio.",
 
     badges: [
@@ -86,7 +93,7 @@ export const fanarts = [
   {
     id: 6,
     title: "Mba Sasa dan Kang Bakso",
-    image: "./img/Fanart2.jpeg",
+    image: fanart2,
     description: "This fanart has won a competition. As a reward, the fanart was added into a game.",
 
     badges: [
