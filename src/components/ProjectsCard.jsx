@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
 
-function ProjectsCard({ title, image, buttonLink, buttonText, reactIcon, localIcon, description, descLink, badges, index = 0 }) {
+function ProjectsCard({ title, image, buttonLink, buttonText, githubLink, reactIcon, localIcon, description, descLink, badges, index = 0 }) {
   const [imgLoaded, setImgLoaded] = useState(false);
 
   return (
@@ -24,6 +25,14 @@ function ProjectsCard({ title, image, buttonLink, buttonText, reactIcon, localIc
             {buttonText}
           </span>
         </a>
+        {githubLink && (
+          <a href={githubLink} target="_blank" rel="noopener noreferrer" className="absolute bottom-4 left-0 text-white text-sm font-semibold rounded-md px-4">
+            <span className="flex items-center gap-1.5 bg-black/70 text-white font-bold rounded-full px-4 py-2 ring-1 ring-white/20 hover:bg-gray-700 transition duration-300">
+              <FaGithub className="text-base" />
+              GitHub
+            </span>
+          </a>
+        )}
       </div>
 
       <div className="p-5">

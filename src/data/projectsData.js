@@ -19,6 +19,7 @@ export const projects = [
     image: website1,
     buttonLink: "https://cto-website.vercel.app/",
     buttonText: "View Website",
+    githubLink: "https://github.com/Rizors29/cto-website",
 
     reactIcon: [
       { icon: FaReact, tooltip: "React" },
@@ -98,10 +99,11 @@ export const projects = [
   {
     id: 4,
     category: "website",
-    title: "Uni Craft Profile Web",
+    title: "Uni Craft Profile",
     image: website2,
     buttonLink: "https://gilang-uni-website.vercel.app",
     buttonText: "View Website",
+    githubLink: "https://github.com/Rizors29/gilang-uni-website",
 
     reactIcon: [
       { icon: FaReact, tooltip: "React" },
