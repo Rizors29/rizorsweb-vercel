@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
+import { MdArrowOutward } from "react-icons/md";
 
 function ProjectsCard({ title, image, buttonLink, buttonText, githubLink, reactIcon, localIcon, description, descLink, badges, index = 0 }) {
   const [imgLoaded, setImgLoaded] = useState(false);
